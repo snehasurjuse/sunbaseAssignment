@@ -1,5 +1,3 @@
-
-/*
 package com.example.sunbaseAssignment.jwtconfig;
 
 import com.example.sunbaseAssignment.service.JwtUtil;
@@ -35,7 +33,7 @@ public class JwtRequestFilter extends OncePerRequestFilter {
             throws ServletException, IOException {
         try {
             String jwt = parseJwt(request);
-            if (jwt != null && jwtUtil.validateJwtTokens(jwt)) {
+            if (jwt != null && jwtUtil.validateJwtToken(jwt)) {
                 String username = jwtUtil.getUserNameFromJwtToken(jwt);
 
                 UserDetails userDetails = userDetailsService.loadUserByUsername(username);
@@ -65,6 +63,3 @@ public class JwtRequestFilter extends OncePerRequestFilter {
         return null;
     }
 }
-
-
- */

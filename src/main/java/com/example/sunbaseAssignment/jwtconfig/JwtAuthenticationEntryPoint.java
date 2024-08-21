@@ -1,5 +1,5 @@
 package com.example.sunbaseAssignment.jwtconfig;
-/*
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -40,4 +40,3 @@ public class JwtAuthenticationEntryPoint implements AuthenticationEntryPoint {
 
 }
 
-*/
